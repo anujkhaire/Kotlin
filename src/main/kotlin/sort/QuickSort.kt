@@ -31,7 +31,7 @@ fun <T : Comparable<T>> partition(array: Array<T>, low: Int, high: Int): Int {
 
     var left = low
     var right = high
-    val mid = (left + right) / 2
+    val mid = (left+right) ushr 1
     val pivot = array[mid]
 
     while (left <= right) {
